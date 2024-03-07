@@ -47,6 +47,13 @@ a {
 .btn:hover {
   opacity: 0.7;
 }
+/* ======================== Su dung dau 3 cham khi noi dung qua dai ======================== */
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: var(--line-clamp, 1);
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
 /* Header */
 
 .header {
@@ -324,6 +331,7 @@ a {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 22px;
+  background-color: white;
 }
 .courses-item .footer .price {
   font-size: 1.8rem;
@@ -336,4 +344,307 @@ a {
 }
 .courses-item .footer .btn-book:hover {
   background: var(--primary-color);
+}
+
+/* ========================= FEEDBACK ============================= */
+.feedback {
+  background-color: #2e2100;
+  margin-top: 200px;
+  padding: 96px 0;
+}
+
+.feedbacklist {
+  display: flex;
+  overflow: hidden;
+}
+.feedbackitem {
+  width: 100%;
+  display: flex;
+  flex-shrink: 0;
+}
+.feedbackitem .avartar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.feedbackitem .infor .member-name {
+  margin-top: 18px;
+  font-family: var(--font-heading);
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #f7f7f7;
+}
+.feedbackitem .infor .description {
+  margin-top: 4px;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 26px;
+  color: #bfbcb2;
+}
+.feedbackitem .infor .dots {
+  margin-top: 28px;
+  display: flex;
+  gap: 6px;
+}
+.feedback .infor .dot {
+  width: 6px;
+  height: 6px;
+  background-color: #634700;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.feedback .content {
+  width: 66%;
+
+  margin-left: auto;
+}
+.feedback .content blockquote {
+  font-size: 2.6rem;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 40px;
+
+  color: #ffffff;
+}
+.feedback .infor .dot.active {
+  background-color: var(--primary-color);
+  cursor: default;
+}
+
+/* ==================================== FEATURES ============================ */
+.features {
+  margin-top: 200px;
+}
+.features .body {
+  display: flex;
+}
+.features .images {
+  display: flex;
+  gap: 30px;
+}
+.features .images img {
+  width: 270px;
+  height: 404px;
+  border-radius: 16px;
+  object-fit: cover;
+}
+.features .images .lower {
+  margin-top: 30px;
+}
+.features .content {
+  width: 52%;
+  margin-left: auto;
+  margin-left: 130px;
+}
+.features .content .heading {
+  font-family: var(--font-heading);
+  font-size: 3.66rem;
+  font-weight: 700;
+  line-height: 48px;
+}
+.features .content .description {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 28px;
+}
+.features .content .description {
+  margin-top: 16px;
+}
+.features .content .sign-up {
+  min-width: 137px;
+  min-height: 50px;
+  margin-top: 32px;
+  background-color: var(--primary-color);
+}
+
+/* ============================= FEATURES ========================= */
+.lv2 .body {
+  justify-content: space-between;
+}
+.lv2 .images img {
+  width: 470px;
+  height: 440px;
+  object-fit: cover;
+  border-radius: 20px;
+  margin-left: 130px;
+}
+.lv2 .content {
+  margin-left: 0px;
+  margin-top: 16px;
+}
+.lv2 .content .join-now {
+  margin-top: 32px;
+  min-width: 137px;
+  min-height: 50px;
+  margin-top: 32px;
+  background-color: var(--primary-color);
+}
+
+/* ========================= Our Blog ========================= */
+.blog {
+  height: 878px;
+  background-color: #fffcf4;
+  margin-top: 150px;
+}
+.blog .blog-top {
+  padding: 96px 0 55px;
+  margin: auto;
+  text-align: center;
+  width: 448px;
+}
+.blog-top .heading {
+  font-family: var(--font-heading);
+  font-size: 3.8rem;
+  font-weight: 700;
+  line-height: 48px;
+}
+.blog-top .description {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 28px;
+}
+.blog .blog-list {
+  overflow: hidden;
+  display: flex;
+  border-radius: 16px;
+}
+.blog .blog-item {
+  width: 33.33%;
+  background-color: white;
+  margin-right: 30px;
+}
+.blog-item .content {
+  padding: 20px 20px 28px;
+}
+.content .top {
+  display: flex;
+  height: 50px;
+  align-items: center;
+}
+.content .note {
+  padding-right: 4px;
+  padding-bottom: 8px;
+}
+.content .time {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 26px;
+  color: #5f5b53;
+}
+.content .text-alaign {
+  width: 160px;
+  height: 1px;
+  background-color: #e2dfda;
+}
+.content .description {
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 28px;
+  margin-top: 12px;
+  color: #171100;
+}
+.content .read-more {
+  margin-top: 12px;
+  min-height: 50px;
+}
+.content .read-more:hover {
+  background-color: var(--primary-color);
+  border: none;
+}
+.blog .blog-item:hover {
+  box-shadow: 0px 18px 36px 10px #0000000d;
+  border-radius: 12px;
+  border: none;
+}
+.blog .blog-item .img-blog {
+  width: 370px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 16px 16px 0px 0px;
+}
+.blog .dots {
+  display: flex;
+  gap: 6px;
+  justify-content: center;
+  margin-top: 38px;
+}
+.blog .dot {
+  background-color: #5f5b53;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.blog .dot.active {
+  background-color: var(--primary-color);
+  cursor: default;
+}
+
+/* ======================================FOOTER================================== */
+.footer {
+  background-color: #2e2100;
+}
+.footer .row {
+  display: flex;
+  gap: 130px;
+}
+.footer .colum {
+  padding-top: 69px;
+}
+.footer .row .logo {
+  color: white;
+}
+
+.footer .colum .description {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 26px;
+  color: #bfbcb2;
+  margin: 18px 0;
+  width: 267px;
+}
+.footer .colum .socials img {
+  margin-right: 9px;
+}
+.footer .colum .title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 28px;
+  color: #ffffff;
+}
+.footer .colum .decoration {
+  width: 130px;
+  height: 1px;
+  background-color: #59554b;
+  margin-top: 14px;
+  margin-bottom: 26px;
+}
+.footer .colum .list li {
+  margin-bottom: 16px;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 26px;
+}
+.colum .list a {
+  color: #bfbcb2;
+}
+.colum .list strong {
+  font-weight: bold;
+  color: white;
+}
+.footer .underlaign {
+  width: 1170px;
+  height: 1px;
+  background-color: #59554B;
+}
+.footer .descriptionlv2 {
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 26px;
+  color: #807D74;
+  padding: 28px;
+
 }
