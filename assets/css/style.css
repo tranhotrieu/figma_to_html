@@ -637,14 +637,16 @@ a {
 .footer .underlaign {
   width: 1170px;
   height: 1px;
-  background-color: #59554B;
+  background-color: #59554b;
 }
 .footer .descriptionlv2 {
   text-align: center;
   font-size: 1.4rem;
   font-weight: 400;
   line-height: 26px;
-  color: #807D74;
+  color: #807d74;
   padding: 28px;
-
+}
+.colum .list a:hover {
+  text-shadow: 1px 0 0 currentColor;
 }
